@@ -14,11 +14,7 @@ SECRET_KEY = env("SECRET_KEY")
 
 DEBUG = False
 
-ALLOWED_HOSTS = [
-    "Muhammadayub126.pythonanywhere.com",
-    "localhost",
-    "127.0.0.1",
-]
+env("ALLOWED_HOSTS").split(",")
 
 # APPLICATIONS
 INSTALLED_APPS = [
