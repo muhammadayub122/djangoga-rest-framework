@@ -2,19 +2,17 @@ from pathlib import Path
 import os
 import environ
 
-# BASE DIR
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# ENV
+
 env = environ.Env()
 environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
 
-# SECURITY
 SECRET_KEY = env("SECRET_KEY")
 
 DEBUG = False
 
-env("ALLOWED_HOSTS").split(",")
+ALLOWED_HOSTS = env("ALLOWED_HOSTS").split(",")
 
 # APPLICATIONS
 INSTALLED_APPS = [
@@ -65,7 +63,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'projectname.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
