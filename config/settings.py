@@ -15,7 +15,9 @@ SECRET_KEY = env("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = [
-  "*"
+    "Muhammadayub126.pythonanywhere.com",
+    "localhost",
+    "127.0.0.1",
 ]
 
 # APPLICATIONS
@@ -118,5 +120,5 @@ CORS_ALLOWED_ORIGINS = [
 
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://yourusername.pythonanywhere.com",
+    "https://Muhammadayub126.pythonanywhere.com",
 ]
