@@ -15,9 +15,7 @@ SECRET_KEY = env("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "yourusername.pythonanywhere.com",
-    "localhost",
-    "127.0.0.1",
+  "*"
 ]
 
 # APPLICATIONS
